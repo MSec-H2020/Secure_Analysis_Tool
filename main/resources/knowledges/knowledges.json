@@ -1,0 +1,222 @@
+[
+  {
+    "name": "Knowledge",
+    "type": "class",
+    "category": "abstract",
+    "description": ""
+  },
+  {
+    "name": "Security Solution",
+    "type": "class",
+    "category": "solution",
+    "description": "Security Solution is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Knowledge"
+    ]
+  },
+  {
+    "name": "Principle",
+    "type": "class",
+    "category": "solution",
+    "description": "Principle is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Security Solution"
+    ]
+  },
+  {
+    "name": "Function",
+    "type": "class",
+    "category": "solution",
+    "description": "Function is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Security Solution"
+    ]
+  },
+  {
+    "name": "Practice",
+    "type": "class",
+    "category": "solution",
+    "description": "Practice is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Security Solution"
+    ]
+  },
+  {
+    "name": "Guideline",
+    "type": "class",
+    "category": "solution",
+    "description": "Guideline is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Security Solution"
+    ]
+  },
+  {
+    "name": "Microsoft SDF",
+    "type": "instance",
+    "category": "solution",
+    "description": "Microsoft SDF is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Guideline"
+    ]
+  },
+  {
+    "name": "Input Validation Cheat Sheet",
+    "type": "instance",
+    "category": "solution",
+    "description": "Input Validation Cheat Sheet is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Guideline"
+    ]
+  },
+  {
+    "name": "SQL Injection Prevention Cheat Sheet",
+    "type": "instance",
+    "category": "solution",
+    "description": "SQL Injection Prevention Cheat Sheet is clear, simple, actionable guidance for preventing SQL Injection flaws in your applications. SQL Injection attacks are unfortunately very common, and this is due to two factors:\n\nthe significant prevalence of SQL Injection vulnerabilities, and\nthe attractiveness of the target (i.e., the database typically contains all the interesting/critical data for your application).\nIt's somewhat shameful that there are so many successful SQL Injection attacks occurring, because it is EXTREMELY simple to avoid SQL Injection vulnerabilities in your code.\n\nSQL Injection flaws are introduced when software developers create dynamic database queries that include user supplied input. To avoid SQL injection flaws is simple. Developers need to either: a) stop writing dynamic queries; and/or b) prevent user supplied input which contains malicious SQL from affecting the logic of the executed query.\n\nThis article provides a set of simple techniques for preventing SQL Injection vulnerabilities by avoiding these two problems. These techniques can be used with practically any kind of programming language with any type of database. There are other types of databases, like XML databases, which can have similar problems (e.g., XPath and XQuery injection) and these techniques can be used to protect them as well.",
+    "source": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+    "inherit": [
+      "Guideline"
+    ]
+  },
+  {
+    "name": "Security Problem",
+    "type": "class",
+    "category": "problem",
+    "description": "Security Problem is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Knowledge"
+    ]
+  },
+  {
+    "name": "Threats",
+    "type": "class",
+    "category": "problem",
+    "description": "Threats is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Security Problem"
+    ]
+  },
+  {
+    "name": "STRIDE",
+    "type": "instance",
+    "category": "problem",
+    "description": "STRIDE is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Threats"
+    ]
+  },
+  {
+    "name": "DREAD",
+    "type": "instance",
+    "category": "problem",
+    "description": "DREAD is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Threats"
+    ]
+  },
+  {
+    "name": "Vulnerability",
+    "type": "class",
+    "category": "problem",
+    "description": "Vulnerability is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Security Problem"
+    ]
+  },
+  {
+    "name": "A SQL Injection",
+    "type": "instance",
+    "category": "problem",
+    "description": "A SQL Injection is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Vulnerability"
+    ]
+  },
+  {
+    "name": "Attack",
+    "type": "class",
+    "category": "problem",
+    "description": "Attack is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Security Problem"
+    ]
+  },
+  {
+    "name": "SQL Injection",
+    "type": "instance",
+    "category": "problem",
+    "description": "SQL injection is a code injection technique, used to attack data-driven applications, in which malicious SQL statements are inserted into an entry field for execution.",
+    "source": "https://en.wikipedia.org/wiki/SQL_injection",
+    "inherit": [
+      "Attack"
+    ],
+    "related": [
+      "Inject Unexpected Items",
+      "SQL Injection Prevention Cheat Sheet"
+    ]
+  },
+  {
+    "name": "Bridge",
+    "type": "class",
+    "category": "bridge",
+    "description": "Bridege is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Knowledge"
+    ]
+  },
+  {
+    "name": "Security Patterns",
+    "type": "class",
+    "category": "bridge",
+    "description": "Security Patterns is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Bridge"
+    ]
+  },
+  {
+    "name": "Single Access Point",
+    "type": "class",
+    "category": "bridge",
+    "description": "Single Access Point is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Security Patterns"
+    ]
+  },
+  {
+    "name": "Misuse Patterns",
+    "type": "class",
+    "category": "bridge",
+    "description": "Misuse Patterns is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Bridge"
+    ]
+  },
+  {
+    "name": "Inject Unexpected Items",
+    "type": "class",
+    "category": "bridge",
+    "description": "Inject Unexpected Items is ...",
+    "source": "https://en.wikipedia.org/wiki/Misuse_case",
+    "inherit": [
+      "Misuse Patterns"
+    ]
+  }
+]

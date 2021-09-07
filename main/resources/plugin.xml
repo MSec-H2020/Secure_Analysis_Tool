@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+   <extension point="com.change_vision.astah.ui.view">
+      <view
+              id="jp.nii.misusecase.view"
+              type="extraTab"
+              class="jp.nii.misusecase.view.MisusecaseView" />
+   </extension>
+   <extension point="com.change_vision.astah.ui.actionSets">
+      <actionSet
+              label="%action_set_label"
+              visible="true"
+              id="jp.nii.misusecase.actionSet">
+         <menu
+                 id="update_knowledge"
+                 label="%menu_group"
+                 path="tool/update_knowledge">
+         </menu>
+         <action
+                 label="%update_label"
+                 icon="icons/sample.gif"
+                 class="jp.nii.misusecase.actions.UpdateKnowledgeAction"
+                 tooltip="%update_tooltip"
+                 menubarPath="tool/update_knowledge/"
+                 id="jp.nii.nii.actions.UpdateKnowledgeAction">
+         </action>
+         <action
+                 label="%reset_label"
+                 icon="icons/sample.gif"
+                 class="jp.nii.misusecase.actions.ResetKnowledgeAction"
+                 tooltip="%reset_tooltip"
+                 menubarPath="tool/update_knowledge/"
+                 id="jp.nii.misusecase.actions.ResetKnowledgeAction">
+         </action>
+      </actionSet>
+   </extension>
+</plugin>
